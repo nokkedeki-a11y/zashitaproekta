@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Защита проекта</title>
+  <style>
+    body {
+       font-family: 'MyCustomFont';
+      background-color: #f9f9fb;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      color: #222;
+    }
+
+    .block {
+      background: #f4f4f9;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 12px;
+      max-width: 900px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      line-height: 1.6;
+    }
+
+    .quote {
+      font-size: 20px;
+      font-style: italic;
+      border-left: 5px solid #4a90e2;
+      padding-left: 15px;
+      margin: 20px 0;
+      color: #444;
+    }
+
+    ul {
+      list-style: disc;
+      padding-left: 40px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      margin: 20px auto;
+      border-radius: 8px;
+    }
+
+    table {
+      width: 100%;
+      
+      margin: 20px auto;
+      background: #fff8f0;
+      border-radius: 10px;
+      
+    }
+
+    th,
+    td {
+      padding: 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+
+      
+    }
+
+    a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+      margin: 0 10px;
+    }
+
+    form {
+      background: #f4f4f9;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background: #4a90e2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: #357ab7;
+    }
+
+
+    .animka{
+      animation: animka 4s ;
+    }
+
+
+
+    @keyframes animka {
+      0%{transform: translateY(0); }
+      50%{transform: translateX(460px); }
+      100%{transform: translateZ(0); }
+    }
+
+
+    .pngfoto{
+      border-radius: 42px;
+      
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Приветствую вас на защите моего проекта</h1>
+
+  <div class="block">
+    <p>Здравствуйте! Это мой новый сайт, созданный с помощью <b>HTML</b>. Этот сайт был сделан для защиты итоговой работы для <b>cap.edu</b>.</p>
+
+    <div class="quote">«Не позволяйте тому, что вы не можете сделать, мешать тому, что вы можете сделать»  
+      <br>— Джон Вуден
+    </div>
+
+    <p>Этот мини-сайт был сделан учеником образовательной онлайн-школы <b>cap.edu</b>.</p>
+  </div>
+
+  <div class="block">
+    <h2>Зачем нужны языки программирования?</h2>
+    <ul>
+      <li><b>HTML</b> — нужен для создания сайтов. Делает структуру страниц: заголовки, картинки, кнопки.</li>
+      <li><b>Java</b> — подходит для приложений на Android и серверов.</li>
+      <li><b>C++</b> — мощный язык для игр, симуляторов и высоких скоростей.</li>
+      <li><b>C#</b> — язык от Microsoft. Используется в Windows и Unity.</li>
+
+      <img class="pngfoto" src="https://www.castcom.ru/netcat_files/94/112/castcom_progr_lang.png" alt="Диаграмма языков">
+
+
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Диаграмма языков </h2>
+    <p>Вот диаграмма популярности языков программирования за 2020 год:</p>
+    <img class="pngfoto" src="https://avatars.mds.yandex.net/i?id=bf6205cfab6356bd5fc2c8e2799ecda24ff2e235-4012162-images-thumbs&n=13" alt="Диаграмма языков">
+  </div>
+
+  <div class="block">
+    <h2>Мои книги</h2>
+    <p>   5 книг которые  я читал:</p>
+    <ul>
+      <li>«Волоколамское шоссе»</li>
+      <li>«Одиннадцать минут»</li>
+      <li>«Золотая Орда»</li>
+      <li>«Думай как математик»</li>
+      <li>«Супер-мышление»</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Компании и языки</h2>
+    <ul>
+      <li class="animka">Apple, NASA, Spotify, Amazon, YouTube → C++</li>
+      <li class="animka">Яндекс, Microsoft, Tesla → C#</li>
+      <li class="animka">Airbnb, Uber, Pinterest, Groupon, eBay → Java</li>
+      <li class="animka">Google, Facebook, Wikipedia, Twitter → HTML</li>
+    </ul>
+  </div>
+
+  <div class="block">
+    <h2>Советы начинающим</h2>
+    <p>Когда я начал работать с HTML, мне казалось, что это будет просто. Но оказалось, что любая технология требует изучения и времени. Несмотря на трудности, HTML оказался интересным и увлекательным! Постепенно я начал понимать структуру кода, основы разметки, работу тегов и атрибутов, а также то, как важно правильно организовывать элементы страницы для лучшего восприятия.</p>
+  </div>
+
+  <div class="block">
+    <h2>Где я учился вне занятий </h2>
+    <table>
+      <tr>
+        <td>На русском</td>
+        <td><a href="https://www.youtube.com/c/UlbiTV" target="_blank">Ulbi TV</a></td>
+      </tr>
+      <tr>
+        <td>На английском</td>
+        <td><a href="https://www.youtube.com/c/Freecodecamp" target="_blank">FreeCodeCamp</a></td>
+      </tr>
+    </table>
+    <p><a href="http://erlanproduction.tilda.ws" target="_blank">Мой сайт в Tilda</a></p>
+    <p><a href="https://www.figma.com/design/ye2ylF3Gnwu7JrgaUFv2wU/Untitled?node-id=0-1" target="_blank">Мой сайт в Figma</a></p>
+  </div>
+
+  <footer>
+    <p>Контакты:</p>
+    <a href="#">Whatsapp</a> | 
+    <a href="https://t.me/demaaaaaasbot">Telegram</a> | 
+    <a href="#">Viber</a> | 
+    <a href="#">VK</a> | 
+    <a href="#">Instagram</a>
+  </footer>
+
+  <form>
+    <label for="email">Ваш email:</label>
+    <input type="email" id="email" name="email" placeholder="Введите ваш email">
+    <button type="submit">Отправить</button>
+  </form>
+
+</body>
+</html>
