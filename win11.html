@@ -1,0 +1,50 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            function firstTask() {
+                return new Promise ((resolve,reject) => {
+                    setTimeoutt(()=>{
+                        resolve("1W");
+                    },1000);
+                });
+            }
+
+            function secondTask() {
+                return new Promise ((resolve,reject) => {
+                    setTimeoutt(()=>{
+                        resolve('${message}, 2W');
+                    },1000);
+                });
+            }
+
+            function thirdTask() {
+                return new Promise ((resolve,reject) => {
+                    setTimeoutt(()=>{
+                        resolve('${message}, 2W');
+                    },10000);
+                });
+            }
+
+
+
+
+
+            firstTask()
+            .then((result) => secondTask(result))
+            .then((result) => thirdTask(result))
+            .then((result) => {
+                console.log(result)
+
+            })
+            .catch((error) => {
+            console.error(error)
+            })
+        </script>
+    </body>
+    </html>
